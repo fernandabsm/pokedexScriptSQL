@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `pokedexTest`.`Pokemon` (
   `pontos_combate` VARCHAR(45) NOT NULL,
   `local_captura` VARCHAR(50) NOT NULL,
   `data_captura` VARCHAR(10) NOT NULL,
-  `evolucao` VARCHAR(45) NOT NULL,
+  `evolucao` VARCHAR(45),
   `Treinador_cpf` VARCHAR(20) NOT NULL,
   PRIMARY KEY (`idPokemon`, `Treinador_cpf`),
   INDEX `fk_Pokemon_Treinador_idx` (`Treinador_cpf` ASC) VISIBLE,
