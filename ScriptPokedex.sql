@@ -96,7 +96,7 @@ CREATE TABLE IF NOT EXISTS `pokedexTest`.`Login` (
   CONSTRAINT `fk_Login_Treinador1`
     FOREIGN KEY (`Treinador_cpf`)
     REFERENCES `pokedexTest`.`Treinador` (`cpf`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
